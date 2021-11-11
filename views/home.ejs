@@ -1,0 +1,17 @@
+<%- include('partials/header'); -%>
+
+<h1>HOME</h1>
+<p><%= homecontent%></p>
+<% ipos.forEach(function(wr){ %>
+	<h1><%=wr.work%></h1>
+	<p><%=wr.postt.substring(0,100)+ "...."%>
+	<a href="posts/<%=wr.work%>">Read More</a>
+
+	</p>
+
+
+<% }) %>
+
+
+
+<%- include('partials/footer'); -%>
